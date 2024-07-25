@@ -52,9 +52,3 @@ The final step of the project is developing a forecasting model that can provide
 - Testing set: 01-05-2017 to 30-06-2017
 
 The units for the Dense layer of the model are set at 325 (as many as the loop detectors), when the LSTM units are being set at 75. The number of epochs is 100 with a 64 batch size. At last, there is an early stopping method being implemented with a patience of 8, meaning if there are no reductions on loss percentage for 8 epochs the training is being stopped. After plotting the training & validation loss values in the same line plot there is no overfitting or underfitting, meaning that the model work fine. Finally the model was reviewed with the the metrics MSE, MAPE, RMSE and R^2 score. These metrics where counted every 5 minutes and the median of each metric across all loop detector data in the test set and stored in a dataframe.
-
-
-## License
-This project was built using an open-source dataset and can be found [here](https://zenodo.org/records/4264005).
-
-This project was built as part of a course named "Data Science Topics" in the undergraduate study program of the Computer Science department at the University of Piraeus. The outline of the project was conducted by the Data Science Lab @ Univ. of Piraeus.
